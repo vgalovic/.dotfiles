@@ -1,3 +1,6 @@
+# starship
+eval "$(starship init bash)"
+
 #Neovim
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
