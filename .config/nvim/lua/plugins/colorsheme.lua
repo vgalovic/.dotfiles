@@ -1,5 +1,7 @@
 return {
 	"navarasu/onedark.nvim",
+	lazy = false,
+	priority = 1000,
 	init = function()
 		-- Lua
 		require("onedark").setup({
