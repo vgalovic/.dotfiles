@@ -36,8 +36,8 @@ return {
 		})
 
 		-- Keybindings for Nvim Tree
-		vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-		vim.api.nvim_set_keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
-		vim.api.nvim_set_keymap("n", "<leader>f", ":NvimTreeFindFile<CR>", { noremap = true, silent = true })
+		vim.api.nvim_set_keymap("n", "<leader><tab>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+		vim.api.nvim_set_keymap("n", "<leader>nr", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
+		vim.api.nvim_set_keymap("n", "<leader>nf", ":NvimTreeFindFile<CR>", { noremap = true, silent = true })
 	end,
 }

@@ -41,8 +41,11 @@ return { -- Useful plugin to show you pending keybinds.
 
 		-- Document existing key chains
 		spec = {
+			{ "<leader>b", group = "[B]uffer order", mode = { "n" } },
 			{ "<leader>c", group = "[C]ode", mode = { "n", "x" } },
 			{ "<leader>d", group = "[D]ocument" },
+			{ "<leader>f", group = "[F]find", mode = { "n" } },
+			{ "<leader>n", group = "[N]vim Tree", mode = { "n" } },
 			{ "<leader>r", group = "[R]ename" },
 			{ "<leader>s", group = "[S]earch" },
 			{ "<leader>w", group = "[W]orkspace" },
