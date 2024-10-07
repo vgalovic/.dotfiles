@@ -40,19 +40,19 @@ return {
 			"n",
 			"<leader>tt",
 			":NvimTreeToggle<CR>",
-			{ noremap = true, silent = true, desc = "[T]oggle NvimTree" }
+			{ noremap = true, silent = true, desc = "[T]oggle File Tree" }
 		)
 		vim.api.nvim_set_keymap(
 			"n",
 			"<leader>tr",
 			":NvimTreeRefresh<CR>",
-			{ noremap = true, silent = true, desc = "[R]efresh NvimTree" }
+			{ noremap = true, silent = true, desc = "[R]efresh  File Tree" }
 		)
 		vim.api.nvim_set_keymap(
 			"n",
 			"<leader>tf",
 			":NvimTreeFindFile<CR>",
-			{ noremap = true, silent = true, desc = "[F]ind File in NvimTree" }
+			{ noremap = true, silent = true, desc = "[F]ind File in File Tree" }
 		)
 	end,
 }

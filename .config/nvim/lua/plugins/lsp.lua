@@ -14,11 +14,6 @@ return {
 
 		-- Allows extra capabilities provided by nvim-cmp
 		"hrsh7th/cmp-nvim-lsp",
-		init = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { " asm-lsp", "clang-format" },
-			})
-		end,
 	},
 
 	config = function()
@@ -135,9 +130,9 @@ return {
 				--
 				-- This may be unwanted, since they displace some of your code
 				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
-					map("<leader>th", function()
+					map("<leader>T", function()
 						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
-					end, "[T]oggle Inlay [H]ints")
+					end, "[T]oggle Inlay Hints")
 				end
 			end,
 		})
@@ -211,13 +206,13 @@ return {
 		--    :Mason
 		--
 		--  You can press `g?` for help in this menu.
-		require("mason").setup()
-
 		-- You can add other tools here that you want Mason to install
 		-- for you, so that they are available from within Neovim.
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
+			"asm-lsp",
+			"clang-format",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
