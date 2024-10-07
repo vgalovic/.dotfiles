@@ -4,7 +4,7 @@ return { -- Autoformat
 	cmd = { "ConformInfo" },
 	keys = {
 		{
-			"<leader>f",
+			"<leader>F",
 			function()
 				require("conform").format({ async = true, lsp_format = "fallback" })
 			end,
@@ -32,6 +32,12 @@ return { -- Autoformat
 		end,
 		formatters_by_ft = {
 			lua = { "stylua" },
+			c = { "ast-grep", "clang-format" },
+			cpp = { "ast-grep", "clang-format" },
+			python = { "ruff", "ast-grep" },
+			asembly = { "asmfmt" },
+			latex = { "latexindent" },
+			SystemVerilog = { "verible" },
 			-- Conform can also run multiple formatters sequentially
 			-- python = { "isort", "black" },
 			--
