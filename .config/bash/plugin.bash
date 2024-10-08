@@ -3,13 +3,8 @@ eval "$(starship init bash)"
 
 #Neovim
 
-export PATH="$PATH:/opt/nvim-linux64/bin"
 alias vim="nvim"
 alias vi="nvim"
-
-#Homebrew
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #bash-preexec.sh
 
@@ -17,7 +12,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #atuin
 
-. "$HOME/.atuin/bin/env"
 eval "$(atuin init bash)"
 
 # Set up fzf key bindings and fuzzy completion

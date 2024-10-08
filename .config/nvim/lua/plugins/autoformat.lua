@@ -38,6 +38,7 @@ return { -- Autoformat
 			asembly = { "asmfmt" },
 			latex = { "latexindent" },
 			SystemVerilog = { "verible" },
+			nix = { " nixpkgs-fmt" },
 			-- Conform can also run multiple formatters sequentially
 			-- python = { "isort", "black" },
 			--
