@@ -49,6 +49,6 @@ alias yt-dlp-audio-playlist='yt-dlp --format bestaudio --extract-audio --audio-f
 
 alias zen-update="bash <(curl https://updates.zen-browser.app/appimage.sh)"
 
-alias top="bashtop"
+alias top="btop"
 
 alias fastfetch="/nix/store/jl5cn2kyp96daj51zhykkpnp40xiz85j-home-manager-path/bin/fastfetch -c ~/.config/fastfetch/extended.jsonc"

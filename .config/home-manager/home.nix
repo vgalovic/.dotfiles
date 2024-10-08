@@ -40,6 +40,7 @@
     neovim
     # kitty
     bat
+    btop
     eza
     fd
     fzf
