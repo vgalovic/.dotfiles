@@ -1,10 +1,8 @@
 # starship
 eval "$(starship init bash)"
 
-#Neovim
-
-alias vim="nvim"
-alias vi="nvim"
+#Homebrew
+eval "$(/bin/brew shellenv)"
 
 #bash-preexec.sh
 
