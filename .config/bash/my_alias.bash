@@ -51,4 +51,4 @@ alias zen-update="bash <(curl https://updates.zen-browser.app/appimage.sh)"
 
 alias top="btop"
 
-alias fastfetch="/nix/store/jl5cn2kyp96daj51zhykkpnp40xiz85j-home-manager-path/bin/fastfetch -c ~/.config/fastfetch/extended.jsonc"
+alias fastfetch=" /home/linuxbrew/.linuxbrew/bin/fastfetch -c ~/.config/fastfetch/extended.jsonc"

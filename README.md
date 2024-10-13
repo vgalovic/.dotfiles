@@ -22,7 +22,7 @@ echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 
 #Install CLI apps
 ```sh
-brew install yazi ffmpegthumbnailer sevenzip jq poppler fd ripgrep fzf zoxide imagemagick bat lazygit mercurial thefuck tlrc tree-sitter atuin neovim starship fastfetch npm nodejs
+brew install yazi ffmpegthumbnailer sevenzip jq poppler fd ripgrep fzf zoxide imagemagick bat lazygit mercurial thefuck tlrc tree-sitter atuin neovim starship fastfetch npm nodejs rust btop
 ```
 
 #Download bash-preexec
