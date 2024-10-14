@@ -1,7 +1,11 @@
 #Install stow
 ```sh
 sudo apt install stow
-stow --adopt .
+stow .
+```
+
+```sh
+sudo apt install gcc-multilib g++
 ```
 
 #Install Kitty
@@ -19,13 +23,27 @@ echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+#Install starship
+```sh
+curl -sS https://starship.rs/install.sh | sh
+```
 
 #Install CLI apps
 ```sh
-brew install yazi ffmpegthumbnailer sevenzip jq poppler fd ripgrep fzf zoxide imagemagick bat lazygit mercurial thefuck tlrc tree-sitter atuin neovim starship fastfetch npm nodejs rust btop
+brew install yazi ffmpegthumbnailer sevenzip jq poppler 
+brew install fd ripgrep fzf zoxide 
+brew install imagemagick bat lazygit mercurial 
+brew install thefuck tlrc tree-sitter atuin 
+brew install neovim fastfetch npm 
+brew install nodejs rust btop eza
 ```
 
 #Download bash-preexec
 ```sh
 curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
+```
+
+#Add bat theme to the list
+```sh
+bat cache --build
 ```

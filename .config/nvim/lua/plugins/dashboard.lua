@@ -21,8 +21,8 @@ return {
 						key = "f",
 					},
 					{
-						--icon = " ",
-						desc = "New file",
+						icon = "",
+						desc = " New file",
 						group = "Command",
 						key = "n",
 						action = ":enew",
