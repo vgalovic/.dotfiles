@@ -31,7 +31,6 @@ alias q='exit'
 #alias ts="/home/vgalovic/Applications/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh"
 
 #--------------------------------------------------------------------------------------
-#sudo apt install build-essential libc6 libgcc-s1 libstdc++6 libsystemc libsystemc-dev
 
 alias systemc="g++ -I ${SYSTEMC}/include -L${SYSTEMC}/lib-linux64 -lsystemc -o"
 

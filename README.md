@@ -4,13 +4,18 @@ sudo apt install stow
 stow .
 ```
 
+#Install SystemC and Vivado dependencies
 ```sh
-sudo apt install gcc-multilib g++
+sudo apt install build-essential libc6 libgcc-s1 libstdc++6 libsystemc libsystemc-dev gcc-multilib g++
 ```
 
 #Install Kitty
 ```sh
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+
+mkdir ~/.local/bin/
+mkdir ~/.local/share/applications/
+
 ln -sf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten ~/.local/bin/
 cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
 cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications/
