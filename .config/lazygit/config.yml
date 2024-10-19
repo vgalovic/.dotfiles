@@ -1,3 +1,6 @@
+os:
+  edit: '/home/linuxbrew/.linuxbrew/bin/nvim {{filename}}'
+
 theme:
   activeBorderColor:
     - '#a6e3a1'

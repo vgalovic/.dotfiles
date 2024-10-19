@@ -44,6 +44,7 @@ return { -- Useful plugin to show you pending keybinds.
 			{ "<leader>b", group = "[B]uffer order", mode = { "n" } },
 			{ "<leader>c", group = "[C]ode", mode = { "n", "x" } },
 			{ "<leader>d", group = "[D]ocument" },
+			{ "<leader>f", group = "[F]ile manager" },
 			{ "<leader>l", group = "[L]SP" },
 			{ "<leader>r", group = "[R]ename" },
 			{ "<leader>s", group = "[S]earch" },

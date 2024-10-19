@@ -1,7 +1,10 @@
 [opener]
+
 edit = [
-	{ run = 'nvim "$@"', block = true, for = "unix" }
+#	{ run = 'nvim "$@"', block = true, for = "unix" }
+	{ run = '/home/linuxbrew/.linuxbrew/bin/nvim "$@"', block = true, for = "unix" }
 ]
+
 play = [
 	{ run = 'mpv "$@"', orphan = true, for = "unix" }
 ]
