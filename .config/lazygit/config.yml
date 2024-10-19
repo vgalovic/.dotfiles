@@ -1,5 +1,5 @@
 os:
-  edit: '/home/linuxbrew/.linuxbrew/bin/nvim {{filename}}'
+  edit: '/home/linuxbrew/.linuxbrew/bin/nvim  {{filename}}'
 
 theme:
   activeBorderColor:

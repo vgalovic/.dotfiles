@@ -1,7 +1,28 @@
+#Yazi
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+#Cargo
+
+. "$HOME/.cargo/env"
+
+#Neovim
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 # starship
+
 eval "$(starship init bash)"
 
 #Homebrew
+
 eval "$( /home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #bash-preexec.sh

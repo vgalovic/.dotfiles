@@ -43,6 +43,11 @@ brew install neovim fastfetch npm
 brew install nodejs rust btop eza
 ```
 
+#Add yazi starship
+```sh
+ya pack -a Rolv-Apneseth/starship
+```
+
 #Download bash-preexec
 ```sh
 curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
